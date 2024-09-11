@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <table cellspacing="0" cellpadding="0" class="font-inter-light">
           <tr>
             <td style="width: 16.66%;">${item.formulary}</td>
-            <td style="width: 16.66%;"><img src="../../assets/images/avatar-15.png" alt="avatar image" style="width: 30px;"></td>
+            <td style="width: 16.66%;"><img src="./assets/images/avatar-15.png" alt="avatar image" style="width: 30px;"></td>
             <td style="width: 16.66%;">${item.plantype}</td>
             <td style="width: 16.66%;">${item.coverage}</td>
             <td style="width: 16.66%;">${item.restrictions}</td>
