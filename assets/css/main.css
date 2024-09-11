@@ -1,0 +1,483 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Roboto Bold Italic';
+  src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
+      url('../fonts/Roboto-BoldItalic.woff') format('woff'),
+      url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+      url('../fonts/Roboto-Italic.woff') format('woff'),
+      url('../fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Black';
+  src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+      url('../fonts/Roboto-Black.woff') format('woff'),
+      url('../fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+      url('../fonts/Roboto-Bold.woff') format('woff'),
+      url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Black Italic';
+  src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
+      url('../fonts/Roboto-BlackItalic.woff') format('woff'),
+      url('../fonts/Roboto-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+      url('../fonts/Roboto-Light.woff') format('woff'),
+      url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Light Italic';
+  src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
+      url('../fonts/Roboto-LightItalic.woff') format('woff'),
+      url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Medium Italic';
+  src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),
+      url('../fonts/Roboto-MediumItalic.woff') format('woff'),
+      url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Thin Italic';
+  src: url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
+      url('../fonts/Roboto-ThinItalic.woff') format('woff'),
+      url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+      url('../fonts/Roboto-Medium.woff') format('woff'),
+      url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff'),
+      url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url('../fonts/Roboto-Thin.woff2') format('woff2'),
+      url('../fonts/Roboto-Thin.woff') format('woff'),
+      url('../fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white: #ffffff;
+  --off-white: #FAF9F6;
+  --black: #000000;
+  --teal: #67c2b6;
+  --gray: #4c4a49;
+}
+
+body {
+  font-family: 'Roboto Bold';
+  background-color: var(--off-white);
+  font-size: 16px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  display: block !important;
+}
+
+.main-wrapper {
+  border: 1px solid var(--black);
+  width: 90%;
+  max-width: 1000px;
+  margin: 10% auto;
+  height: 412px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px -5px 3px var(--teal);
+  -moz-box-shadow: 0px -5px 3px var(--teal);
+  box-shadow: 0px -5px 3px var(--teal);
+  background-color: var(--white);
+}
+
+.bpg-search-btn-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.btn-label-group {
+  padding-right: 20px;
+}
+
+.btn-label-group label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-top: 0 !important;
+}
+
+.btn-label-group input {
+  height: 30px;
+  margin-top: 8px;
+  padding: 5px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+}
+
+.bpg-search-btn-group button {
+  width: 130px;
+  border: none;
+  background-color: var(--teal);
+  border-radius: 16px;
+  color: var(--white);
+  font-size: 16px;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.bpg-search-btn-group button:hover {
+  transform: scale(1.05);
+}
+
+.resetButton {
+  width: 80px !important;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0 30px;
+  font-size: 20px;
+  font-family: 'Roboto Medium';
+  color: var(--gray);
+  padding: 0 10px;
+}
+
+.return-data {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.return-data th {
+  color: var(--white);
+  background-color: var(--gray);
+  height: 40px;
+  vertical-align: middle;
+  padding: 5px 0;
+}
+
+.return-data th:nth-child(1) {
+  text-align: left;
+  padding-left: 8px;
+  border-radius: 10px 0 0 0;
+}
+
+.return-data th:nth-child(6) {
+  border-radius: 0 10px 0 0;
+}
+
+.return-data td {
+  height: 40px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: 'Poppins Medium';
+  text-align: center;
+  border-bottom: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+}
+
+.return-data td:nth-child(1) {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.return-data td:nth-child(6) {
+  border-right: none;
+} 
+
+.source-statement {
+  font-size: 10px;
+  color: var(--gray);
+  text-align: center;
+  margin-top: 50px;
+}
+
+#result {
+  height: 80px;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-bottom: 1px solid var(--teal);
+  border-left: 1px solid var(--gray);
+}
+
+#result table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#result table td {
+  height: 40px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: 'Poppins Medium';
+  text-align: center;
+  border-bottom: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+}
+
+#result table td:nth-child(6) {
+  border-right: none;
+}
+
+.input-group {
+  display: flex;
+}
+
+.detail-popup {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media (max-width: 983px) {
+  .bpg-search-btn-group {
+    display: block !important;
+    flex-direction: row !important;
+    margin-left: 10%;
+  }
+
+  .main-wrapper {
+    width: 95%;
+    height: 475px;
+  }
+}
+
+@media (max-width: 775px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .input-group {
+    display: block !important;
+  }
+
+  .bpg-search-btn-group {
+    margin-left: 10px !important;
+  }
+
+  .main-wrapper {
+    width: 95%;
+    height: 650px;
+  }
+
+  .btn-label-group label {
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 525px) {
+  .main-wrapper {
+    width: 95%;
+    height: 670px;
+  }
+}
+
+/* popup containers */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: 350px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.detailsPopup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.detailsPopup .detailsPopupText {
+  visibility: hidden;
+  width: 500px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: 350px;
+}
+
+.detailsPopup .detailsPopupText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.detailsPopup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
