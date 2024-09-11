@@ -21,21 +21,21 @@
     "details": 71,
     "bin": 2136,
     "pcn": "NVR",
-    "territoryName": "North Carolina",
+    "territoryName": "Vermont",
     "drugName": "Multaq",
     "group": "BPLO2"
   },
   {
-    "formulary": "Preadiant Coverage Care",
+    "formulary": "Cigna Healthcare Standard PPO",
     "planprevalence": 48,
-    "plantype": "Formulary",
-    "coverage": "Covered",
-    "restrictions": "PA",
+    "plantype": "Commercial",
+    "coverage": "Preferred <br> (PA/ST)",
+    "restrictions": "PA ST",
     "details": 97,
     "bin": 2147,
     "pcn": "ATD",
-    "territoryName": "Vermont",
-    "drugName": "Rezurock",
+    "territoryName": "North Carolina",
+    "drugName": "Dupixent",
     "group": "BPLO3"
   },
   {
